@@ -1668,7 +1668,7 @@ fieldset[disabled].btn-blue.active {
   border-color: #003040;
 }
 .btn-danger {
-  background-color: #c75757;
+  background-color: #c75757 !important;
   color: #fff;
 }
 .btn-danger:active {
@@ -2258,16 +2258,16 @@ h4.alert-title {
   background-color: #319db5;
 }
 .badge-success {
-  background-color: #18a689;
+  background-color: #18a689 !important;
 }
 .badge-info {
   background-color: #b066ff;
 }
 .badge-warning {
-  background-color: #ff9122;
+  background-color: #ff9122 !important;
 }
 .badge-danger {
-  background-color: #c75757;
+  background-color: #c75757 !important;
 }
 .badge-rounded {
   border: 2px solid rgba(255, 255, 255, 0.5);
@@ -6062,7 +6062,7 @@ ul.nav ul.dropdown-menu li.placeholder:before {
   background: #F2F5F7;
 }
 .nestable-dark .dd-handle {
-  background: #353940;
+  background: #FF9122;
   border: 1px solid #D3D3D3;
   color: #dadada;
 }
@@ -6070,9 +6070,9 @@ ul.nav ul.dropdown-menu li.placeholder:before {
   color: #dadada;
 }
 .nestable-dark .dd3-content {
-  background: #353940;
+  background: #FF9122;
   border: 1px solid #3E444F;
-  color: #AEB2B8;
+  color: #FFF;
 }
 .nestable-dark .dd3-handle {
   border: 1px solid #3E444F;

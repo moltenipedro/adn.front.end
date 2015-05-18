@@ -482,7 +482,7 @@
 }
 .theme-sdtl.color-blue.sidebar-top .nav-sidebar > li.nav-hover > a,
 .theme-sdtl.color-blue.rtl .sidebar-top .nav-sidebar > li.nav-hover > a {
-  background: #182e3a !important;
+  background: #182e3a ;
 }
 .theme-sdtl.color-blue .sidebar .sidebar-inner .sidebar-footer .pull-left:hover,
 .theme-sdtl.color-blue .sidebar-footer .pull-left:active,
@@ -3441,6 +3441,27 @@
 .bg-light-dark .sidebar-mailbox.sidebar .nav-sidebar > li.active > a:hover,
 .bg-light-dark .sidebar-mailbox.sidebar .nav-sidebar > li.active > a:focus {
   background: #dce1e4;
+}
+.bg-adn,
+.bg-adn > section,
+.bg-adn .main-content,
+.bg-adn .main-content .page-content,
+.bg-adn.sidebar-mailbox.sidebar .sidebar-inner .nav-sidebar > li.active > a,
+.bg-adn.sidebar-mailbox.sidebar .nav-sidebar > li.active > a:hover,
+.bg-adn .sidebar-mailbox.sidebar .nav-sidebar > li.active > a:focus
+{
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(232,235,240,1) 100%);
+}
+.bg-adn-blue,
+.bg-adn-blue > section,
+.bg-adn-blue .main-content,
+.bg-adn-blue .main-content .page-content,
+.bg-adn-blue.sidebar-mailbox.sidebar .sidebar-inner .nav-sidebar > li.active > a,
+.bg-adn-blue.sidebar-mailbox.sidebar .nav-sidebar > li.active > a:hover,
+.bg-adn-blue .sidebar-mailbox.sidebar .nav-sidebar > li.active > a:focus
+{
+  background: #4a89dc ;
+    color: #fff
 }
 /* Main Color Primary */
 .topbar .header-left .topnav > ul > li > a::before,
