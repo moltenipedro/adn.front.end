@@ -5,7 +5,7 @@ var $sidebar = $('.sidebar');
 var $mainContent = $('.main-content');
 var $sidebarWidth = $(".sidebar").width();
 var is_RTL = false; 
-if($('body').hasClass('rtl'))  is_RTL = true;
+//if($('body').hasClass('rtl'))  is_RTL = true;
 
 /* ==========================================================*/
 /* PLUGINS                                                   */

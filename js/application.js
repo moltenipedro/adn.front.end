@@ -492,7 +492,7 @@ function resetStyle() {
         $('body').removeClass(function(index, css) {
             return (css.match(/(^|\s)theme-\S+/g) || []).join(' ');
         });
-        $('body').addClass('theme-sdtl').addClass('color-default');
+      //  $('body').addClass('theme-sdtl').addClass('color-default');
         $('.builder .theme-color').removeClass('active');
         $('.theme-color').each(function() {
             if ($(this).data('color') == '#319DB5') $(this).addClass('active');
