@@ -1,7 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
- <title>ADN</title>
 <head>
+  <title>ADN</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta name="description" content="admin-themes-adn">
+  <meta name="author" content="adn">
+  <link rel="shortcut icon" href="favicon.png" type="image/png"> 
     <!--CSS.Custom-->
     <link href="EstilosADN/style.css" rel="stylesheet">
     <link href="EstilosADN/theme.css" rel="stylesheet">
@@ -44,23 +49,26 @@
             </div>
         </div><!--/.sidebar-top small-img clearfix -->
           <div class="menu-title">
-            <span>
+            <h5>
               <strong>23:30 HS | 14/05/15</strong>
               
-            </span> 
+            </h5> 
             <div class="pull-right menu-settings">
               <i class="icon-bell"></i>
             </div>
           </div>
-        <ul class="nav nav-sidebar">             
+        <ul class="nav nav-sidebar">   
+              <li class="pull-left p-r-30" id ="logo-empresa"> 
+                <img src="imagenesADN/empresa_bg.png" class="img-responsive p-t-10 p-r-10 p-l-10">
+              </li> <!-- LOGO EMPRESA DESKTOP-->          
               <li class="tm active current-context">
-                <a href="indexv2.php"><i class="icon-home"></i><span>Inicio</span> <span class="fa arrow active"></span></a>
+                <a href="#"><i class="icon-home"></i><span>Inicio</span> <span class="fa arrow active"></span></a>
               </li>
               <li class="tm">
-                <a href="indexv2-1.php"><i class="fa fa-table"></i><span>Tablero de Control</span> <span class="fa arrow"></span></a>
+                <a href="#"><i class="fa fa-table"></i><span>Tablero de Control</span> <span class="fa arrow"></span></a>
               </li>
               <li class="tm">
-                <a href="indexv2-2.php"><i class="fa fa-share-alt"></i><span>Sistema de NIS</span> <span class="fa arrow"></span></a>
+                <a href="#"><i class="fa fa-share-alt"></i><span>Sistema de NIS</span> <span class="fa arrow"></span></a>
               </li>
               <li class="tm">
                 <a href="#"><i class="fa fa-dashboard"></i><span>Dashboard</span> <span class="fa arrow"></span></a>
@@ -69,7 +77,7 @@
                 <a href="#"><i class="fa fa-sitemap"></i><span>Hoja de Ruta</span> <span class="fa arrow"></span></a>
               </li>
               <li class="pull-right" id ="logo-empresa"> 
-                <img src="imagenesADN/empresa_bg.png" class="img-responsive p-t-10 p-r-10">
+                <img src="imagenesADN/logo/logo-ADN.png" alt="ADN" class="img-responsive p-t-10 p-r-10">
               </li> <!-- LOGO EMPRESA DESKTOP-->
           </ul> <!-- /.nav nav-sidebar -->
         </div><!--/.sidebar-inner -->
@@ -85,17 +93,18 @@
                 <ul class="nav nav-horizontal">
                    <li id="user-header" >
                        <a href="#">
-                        <span class="username">Nombre del usuario</span>
+                        <span class="username"><strong>Nombre del usuario</strong></span>
                        </a>     
                    </li>
                    <li id="user-header" style="margin-top:5px">
                      <div class="user-login m-10">
-                       <i class="online"></i> Puesto del Usuario
+                       <i class="online"></i> 
+                       <strong>Puesto del Usuario</strong>
                      </div>
                  </li>
                       <li id="user-header" style="margin-top:5px">
                      <div class="user-login m-10">
-                        <i class="icon-bell"></i><span>23:30 HS | 14/05/15</span> 
+                     
                      </div>
                  </li>
               </ul>
@@ -103,11 +112,16 @@
           </div>
           <div class="header-right">
             <ul class="header-menu nav navbar-nav">
+              <!-- BEGIN LOGO-ADN-->
+              <li class="dropdown p-t-10" id="logo-adn">
+                 <i class="icon-bell "></i><span>23:30 HS | 14/05/15</span> 
+              </li>
+              <!-- END LOGO-ADN-->
               <!--CONFIGURACIONES -->
                <li class="dropdown" id="configuraciones">
                 <a href="#" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
                 <i class="icon-settings"></i>
-                <span >Configuraciones</span>
+                
                 </a>
                 <ul class="dropdown-menu">
                   <li>
@@ -122,24 +136,18 @@
               <!--AYUDA-->
               <li id="quickview-toggle ayuda">
                 <a href="#">
-                  <i class="fa fa-question-circle"></i> Ayuda
+                  <i class="fa fa-question-circle"></i> 
                 </a>
               </li>
               <!-- END-AYUDA-->
               <!-- SALIR -->
               <li id="quickview-toggle salir">
                 <a href="#">
-                  <i class="icon-logout"></i> Salir
+                  <i class="icon-logout"></i> 
                 </a>
               </li>
               <!-- END-SALIR-->
-              <!-- BEGIN LOGO-ADN-->
-              <li class="dropdown" id="logo-adn">
-                <a href="#"  data-close-others="true">
-                <img src="imagenesADN/logo/logo-ADN.png" alt="ADN" class="img-responsive" >
-                </a>
-              </li>
-              <!-- END LOGO-ADN-->
+
             </ul>
           </div>
           <!-- header-right -->
