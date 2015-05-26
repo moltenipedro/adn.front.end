@@ -15,18 +15,6 @@
 <div class="main-content">    
   <div class="page-content page-sidebar-top">
     <div class="row central">
-      <!-- BEGIN GADGETS-->
-      <div id="gadget-config">
-         <div class="panel-content">
-        <a class="builder-toggle">
-          <button type="button" class="btn btn-success">
-              <i class="icon-wrench c-white"></i>
-              <span class="c-white">Configurar los Gadgets</span>
-          </button>
-        </a>
-        </div><!--/.panel-content-->
-      </div><!--/.panel .mCustomScrollbar #gadgets-frame -->
-      <!-- END GADGETS-->
 <!-- BEGIN GADGETS-FIJOS-IZQ-->
 <div class="col-md-8 col-sm-12 ui-sortable" id="gadgets-izquierda">
   <!-- BEGIN NUMEROS INTELIGENTES -->
@@ -277,7 +265,7 @@
                   <i class="glyphicon glyphicon-dashboard pull-left"></i>
                 </div>
                 <div>
-                    <p class="f-12">Resumen HDR</p>
+                    <p class="f-14">Resumen HDR</p>
                 </div>
               </div>
             </div>
@@ -289,7 +277,7 @@
                   <i class="glyphicon glyphicon-dashboard pull-left"></i>
                 </div>
                 <div>
-                    <p class="f-12">Resumen HDR</p>
+                    <p class="f-14">Resumen HDR</p>
                 </div>
               </div>
             </div>
@@ -300,7 +288,7 @@
                 <div class="pull-left p-r-10">
                   <i class="glyphicon glyphicon-dashboard pull-left"></i>
                 </div>
-                  <p class="f-12">Resumen HDR</p>
+                  <p class="f-14">Resumen HDR</p>
          
               </div>
             </div>
@@ -312,7 +300,7 @@
                   <i class="glyphicon glyphicon-dashboard pull-left"></i>
                 </div>
                 <div>
-                    <p class="f-12">Resumen HDR</p>
+                    <p class="f-14">Resumen HDR</p>
                 </div>
               </div>
             </div>
@@ -471,6 +459,7 @@
        <h3><i class="icon-user"></i> <strong>Mi Equipo</strong> </h3>
      </div>
      <div class="panel-content widget-news">
+       <div class="withScroll" data-height="125">
          <div class="col-xs-3">
           <img src="imagenesADN/profil_page/friend8.jpg" alt="" class="pull-left img-responsive img-sm">
         </div>
@@ -494,6 +483,7 @@
           <h3 class="m-t-0 member-name"><strong>Nombre del usuario</strong></h3>
           <p class="member-job">Puesto del usuario</p>
         </div><br/>
+      </div><!--withScroll -->
     </div><!--/.panel-content .widget-news-->    
   </div><!-- /.panel .widget-member .mCustomScrollbar #mi-equipo-->
 <!--END MI EQUIPO -->
@@ -504,11 +494,11 @@
      <h3><i class="icon-list"></i> <strong>Tareas</strong></h3>
    </div><!-- /.panel-header-->
 
-   <div class="panel-content widget-news">
-     <div class="withScroll" data-height="320">
+   <div class="panel-content">
+     <div class="withScroll" data-height="125">
 
-        <div id="tarea" class=" message-item media badge-success">
-         <div class="media">
+        <div id="tarea" class=" message-item media ">
+         <div class="media badge-success">
            <div class="media-body">
             <small class="f-14 c-white">
               TAREAS COMPLETADAS
@@ -537,8 +527,8 @@
      </div>
    </div><!-- /#tarea .message-item .media .badge-success-->
 
-   <div id="tarea" class=" message-item media badge-primary">
-    <div class="media">
+   <div id="tarea" class=" message-item media ">
+    <div class="media badge-primary">
       <div class="media-body">
        <small class="f-14 c-white">
          TAREAS EN PROGRESO
@@ -568,8 +558,8 @@
   </div>
   </div><!-- /#tarea .message-item .media .badge-success-->
 
-  <div id="tarea" class=" message-item media badge-danger">
-   <div class="media">
+  <div id="tarea" class=" message-item media ">
+   <div class="media badge-danger">
      <div class="media-body">
       <small class="f-14 c-white">
         TAREAS CERRADAS
@@ -609,27 +599,27 @@
      <h3><i class="fa fa-group"></i> <strong>Juntas</strong></h3>
    </div><!-- /.panel-header-->
    <div class="panel-content ">
-     <div class="withScroll" data-height="250">
+     <div class="withScroll" data-height="125">
       <div class="panel-content">
         <ul class="todo-list ui-sortable">
           <li class="low">
-            <span class="todo-task">Titulo de la junta</span>
+            <span class="todo-task f-14">TITULO DE LA JUNTA</span>
             <div class="todo-date clearfix">
               <div class="completed-date"></div>
               <div class="due-date"><p>Tareas de la Junta</p><span class="due-date-span">15/12/15</span></div>
             </div>
             <div class="todo-tags pull-right">
-              <div class="label label-warning">En curso</div>
+              <div class="label label-warning">EN CURSO</div>
             </div>
           </li>
           <li class="high">
-            <span class="todo-task">Titulo de la junta</span>
+            <span class="todo-task f-14">TITULO DE LA JUNTA</span>
             <div class="todo-date clearfix">
               <div class="completed-date"></div>
               <div class="due-date"><p>Tareas de la Junta</p><span class="due-date-span">15/12/15</span></div>
             </div>
             <div class="todo-tags pull-right">
-              <div class="label label-danger">Cerrada</div>
+              <div class="label label-danger">CERRADA</div>
             </div>
           </li>
         </ul>
@@ -645,7 +635,7 @@
      <h3><i class="icon-calendar"></i> <strong>Calendario</strong></h3>
    </div><!-- /.panel-header-->
    <div class="panel-content">
-     <div class="withScroll" data-height="350">
+     <div class="withScroll" data-height="125">
         <img src="imagenesADN/calendar.jpg" class="img-responsive">
     </div><!--/.withScroll -->
   </div><!--/.panel-content-->
@@ -664,7 +654,7 @@
       </h3>
    </div><!-- /.panel-header-->
    <div class="panel-content">
-      <div class="withScroll" data-height="300"></div><!--/.withScroll -->
+      <div class="withScroll" data-height="125"></div><!--/.withScroll -->
   </div><!--/.panel-content-->
 </div><!--/.panel .mCustomScrollbar #gadgets-frame -->
 <!-- END FRAME-->
@@ -675,22 +665,22 @@
      <h3><i class="fa fa-bar-chart"></i><strong>Desempeño General de Hoja de Ruta</strong></h3>
    </div><!-- /.panel-header-->
    <div class="panel-content">
-     <div class="withScroll" data-height="350">
+     <div class="withScroll" data-height="125">
       <table class="table table-striped">
         <thead>
           <tr>
             <th class="bg-white">NIs</th>
-            <th class="bg-white" > Prioridades</th>
-            <th class="bg-white"> Total</th>
-            <th class="bg-white"> Meses evaluados</th>
+            <th class="bg-white">Prioridades</th>
+            <th class="bg-white">Total</th>
+            <th class="bg-white">Meses evaluados</th>
          </tr>
         </thead>
        <tbody>
           </tr>
             <tr>
               <td class="bg-white"><strong class="c-primary">100%</strong></td>
-              <td class="bg-white"><strong class="c-primary">100%v</strong></td>
-              <td class="bg-white"><strong class="c-primary">100%v</strong></td>
+              <td class="bg-white"><strong class="c-primary">100%</strong></td>
+              <td class="bg-white"><strong class="c-primary">100%</strong></td>
               <td class="bg-white"><strong class="c-red"> 4</strong></td>
             </tr>          
       </tbody>
@@ -795,6 +785,7 @@
           <span class="switch-handle"></span>
         </label>
       </div><!-- /.layout-option -->
+      <p>*La zona de Gadgets, solo puede tener 3 Gadgets activos.</p>
     </div>
   </div>
 </div>
@@ -869,9 +860,18 @@
     var oculto=$('#gadgets-tareas,#gadgets-juntas,#gadgets-calendario,#gadgets-desempeno,#gadgets-frame');
     oculto.hide(); //#gadgets-mi-equipo, default
     //Gadgets Equipo
-        $('#g-equipo').click(function(){        
-            if($(this).prop('checked') == true){            
-                $('#gadgets-mi-equipo').show();    
+        $('#g-equipo').click(function(){
+          var inputs=$("#mCSB_1").find($("input:checked"));
+          var count=inputs.length;        
+            if($(this).prop('checked') == true){ 
+                if(count > 3){
+                  alert("La zona de Gadgets solo puede contener 3 elementos");
+                  $(this).removeProp('checked');
+                } else 
+                {
+                 $('#gadgets-mi-equipo').show();  
+                }                       
+  
             }        
             else        
             {            
@@ -879,9 +879,18 @@
             }    
         });
     //Gadgets Tareas
-        $('#g-tareas').click(function(){        
-            if($(this).prop('checked') == true){            
-                $('#gadgets-tareas').show();    
+        $('#g-tareas').click(function(){
+          var inputs=$("#mCSB_1").find($("input:checked"));
+          var count=inputs.length;           
+            if($(this).prop('checked') == true){
+              if(count > 3){
+                alert("La zona de Gadgets solo puede contener 3 elementos");
+                $(this).removeProp('checked');
+              } else 
+              {
+                $('#gadgets-tareas').show();
+              }            
+    
             }        
             else        
             {            
@@ -889,9 +898,17 @@
             }    
         }); 
     //Gadgets Juntas
-        $('#g-juntas').click(function(){        
-            if($(this).prop('checked') == true){            
-                $('#gadgets-juntas').show();    
+        $('#g-juntas').click(function(){ 
+        var inputs=$("#mCSB_1").find($("input:checked"));
+        var count=inputs.length;         
+            if($(this).prop('checked') == true){ 
+              if(count > 3){
+                alert("La zona de Gadgets solo puede contener 3 elementos");
+                $(this).removeProp('checked');
+              } else 
+              {
+                $('#gadgets-juntas').show(); 
+              }                  
             }        
             else        
             {            
@@ -899,9 +916,17 @@
             }    
         });
     //Gadgets Calendario
-        $('#g-cal').click(function(){        
-            if($(this).prop('checked') == true){            
-                $('#gadgets-calendario').show();    
+        $('#g-cal').click(function(){
+        var inputs=$("#mCSB_1").find($("input:checked"));
+        var count=inputs.length;           
+            if($(this).prop('checked') == true){
+              if(count > 3){
+                alert("La zona de Gadgets solo puede contener 3 elementos");
+                $(this).removeProp('checked');
+              } else 
+              {
+                $('#gadgets-calendario').show(); 
+              }                 
             }        
             else        
             {            
@@ -909,9 +934,17 @@
             }    
         });    
     //Gadgets Frame
-        $('#g-frame').click(function(){        
-            if($(this).prop('checked') == true){            
-                $('#gadgets-frame').show();    
+        $('#g-frame').click(function(){
+        var inputs=$("#mCSB_1").find($("input:checked"));
+        var count=inputs.length;        
+            if($(this).prop('checked') == true){ 
+              if(count > 3){
+                alert("La zona de Gadgets solo puede contener 3 elementos");
+                $(this).removeProp('checked');
+              } else 
+              {
+                $('#gadgets-frame').show();
+              }
             }        
             else        
             {            
@@ -920,9 +953,17 @@
         });    
 
     //Gadgets desempeno
-        $('#g-desempeno').click(function(){        
-            if($(this).prop('checked') == true){            
-                $('#gadgets-desempeno').show();    
+        $('#g-desempeno').click(function(){
+        var inputs=$("#mCSB_1").find($("input:checked"));
+        var count=inputs.length;        
+            if($(this).prop('checked') == true){ 
+                if(count > 3){
+                  alert("La zona de Gadgets solo puede contener 3 elementos");
+                  $(this).removeProp('checked');
+                } else 
+                {
+                  $('#gadgets-desempeno').show();
+                }
             }        
             else        
             {            
@@ -932,6 +973,5 @@
 
   });
   </script>
-  </body>
-
+</body>
 </html>
