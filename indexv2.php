@@ -451,7 +451,7 @@
 
 <!-- BEGIN GADGETS-DERECHA-->
 <div class="col-md-4 col-sm-12 ui-sortable " id="gadgets-derecha">
-<div class="p-t-20"></div>
+<div class="p-t-20"></div><div class="p-t-10"></div>
 
 <!-- BEGIN MI EQUIPO-->
    <div class="panel widget-member mCustomScrollbar" id="gadgets-mi-equipo" >
