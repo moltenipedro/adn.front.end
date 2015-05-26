@@ -497,8 +497,8 @@
    <div class="panel-content">
      <div class="withScroll" data-height="125">
 
-        <div id="tarea" class=" message-item media ">
-         <div class="media badge-success">
+        <div id="tarea" class=" message-item media  badge-success">
+         <div class="media ">
            <div class="media-body">
             <small class="f-14 c-white">
               TAREAS COMPLETADAS
@@ -527,8 +527,8 @@
      </div>
    </div><!-- /#tarea .message-item .media .badge-success-->
 
-   <div id="tarea" class=" message-item media ">
-    <div class="media badge-primary">
+   <div id="tarea" class=" message-item media badge-primary ">
+    <div class="media ">
       <div class="media-body">
        <small class="f-14 c-white">
          TAREAS EN PROGRESO
@@ -558,8 +558,8 @@
   </div>
   </div><!-- /#tarea .message-item .media .badge-success-->
 
-  <div id="tarea" class=" message-item media ">
-   <div class="media badge-danger">
+  <div id="tarea" class=" message-item media badge-danger ">
+   <div class="media ">
      <div class="media-body">
       <small class="f-14 c-white">
         TAREAS CERRADAS
@@ -598,7 +598,7 @@
    <div class="panel-header">
      <h3><i class="fa fa-group"></i> <strong>Juntas</strong></h3>
    </div><!-- /.panel-header-->
-   <div class="panel-content ">
+ 
      <div class="withScroll" data-height="125">
       <div class="panel-content">
         <ul class="todo-list ui-sortable">
@@ -625,7 +625,7 @@
         </ul>
       </div><!--/.panel-conten -->
     </div><!--/.withScroll -->
-  </div><!--/.panel-content-->
+
   </div><!--/.panel widget-juntas mCustomScrollbar -->
 <!-- END JUNTAS-->
 
