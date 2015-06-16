@@ -1,5 +1,4 @@
-@import "http://fonts.googleapis.com/css?family=Lato:300,400,700,900";
-@import "http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700";
+/* IMPORT CSS */
 @import "../plugins/bootstrap/css/bootstrap.min.css";
 @import "../plugins/bootstrap/css/bootstrap-rtl.min.css";
 @import "../plugins/mcustom-scrollbar/mcustom_scrollbar.min.css";
@@ -18,41 +17,6 @@
 @import "../plugins/bootstrap-tags-input/bootstrap-tagsinput.css";
 @import "../plugins/bootstrap-editable/css/bootstrap-editable.css";
 @import "../plugins/prettify/prettify.css";
-
-/**** SIDEBAR  ****/
-/**** TOPBAR ****/
-/**** QUICKVIEW SIDEBAR ****/
-/**** BOXED LAYOUT ****/
-/**** MAIN CONTENT ****/
-/**** WIDGETS ****/
-/**** PAGES ****/
-/**** SEARCH ****/
-/**** BUILDER ****/
-/******** UI **********/
-/* Main Color */
-/* Alert & Notification */
-/* Popover */
-/* Form */
-/* Select Input */
-/* Tabs */
-/* Table */
-/* Summernote */
-/******* THEMES *******/
-/* Mixin */
-/* MANDATORY CSS */
-/* Select & Radio Inputs */
-/* Text & Image Slider */
-/* Checbox & Radio Icheck */
-/* File Upload and Input Masks */
-/* OPTIONAL CSS */
-/* Depend if you use this functionnalities in your project */
-/* Rounded Icons - See Icons Page - OPTIONAL */
-/* Topbar Left Icons - OPTIONAL */
-/* Weather Icons - See Icons Page - OPTIONAL */
-/* Buttons Loading State - See Buttons Page - OPTIONAL */
-/* Tags Input - See Form Elements Page - OPTIONAL */
-/* Inline Edition X-Editable - OPTIONAL */
-/* Show Html Code - OPTIONAL */
 /* FONTS */
 @font-face {
   font-family: 'weather';
@@ -61,6 +25,28 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'Lato';
+  src: url('fonts/Lato/Lato-Regular.ttf');
+  src: url('fonts/Lato/Lato-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Lato';
+  src: url('fonts/Lato/Lato-Regular.ttf');
+  src: url('fonts/Lato/Lato-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: url('fonts/Open_Sans/OpenSans-Regular.ttf');
+  src: url('fonts/Open_Sans/OpenSans-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+/* HTML */
 html {
   height: 100%;
 }
@@ -13094,8 +13080,15 @@ visibility: hidden;
 }
 
 
-
 @media screen and (min-width: 1025px) {
+/*#gadgets-derecha.col-md-4
+{
+  position: absolute;
+  height: 100%;
+  background-color: white;
+  right: 0;
+  margin-top: 50px;
+}  */
 .nav.nav-sidebar
 {
 background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(204,219,239,1) 100%)!important;

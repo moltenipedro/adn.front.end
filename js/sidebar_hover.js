@@ -14,7 +14,7 @@ var $sidebarWidth  = $(".sidebar").width();
 function sidebarHover(){
 
     if($('.logopanel2').length == 0){
-        $('.topnav').prepend('<div class="logopanel2"><h1><a href="dashboard.html"></a></h1></div>');
+        $('.topnav').prepend('<div class="logopanel2"><h1><a href="#"></a></h1></div>');
     }
     
     if($('body').hasClass('rtl')) {

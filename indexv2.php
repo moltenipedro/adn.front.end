@@ -20,7 +20,7 @@
   <!-- BEGIN NUMEROS INTELIGENTES -->
   <h3 class="m-b-10"><i class="fa fa-line-chart"></i> <strong>Números Inteligentes</strong></h3>
   <div class="row">
-    <div class="col-xlg-2 col-lg-3 col-md-3 col-sm-3 col-xs-12 ">
+    <div class="col-xlg-2 col-lg-3 col-md-3 col-sm-3 col-xs-12">
     <div class="panel-header bg-adn-blue-n bd-3"><strong>Ventas totales por lote de producción anual</strong></div>
       <div class="panel bd-9">
         <div class="panel-content widget-info">
@@ -459,7 +459,7 @@
        <h3><i class="icon-user"></i> <strong>Mi Equipo</strong> </h3>
      </div>
      <div class="panel-content widget-news">
-       <div class="withScroll" data-height="125">
+       <div class="withScroll"  data-height="580">
          <div class="col-xs-3">
           <img src="imagenesADN/profil_page/friend8.jpg" alt="" class="pull-left img-responsive img-sm">
         </div>
@@ -495,7 +495,7 @@
    </div><!-- /.panel-header-->
 
    <div class="panel-content">
-     <div class="withScroll" data-height="125">
+     <div class="withScroll">
 
         <div id="tarea" class=" message-item media  badge-success">
          <div class="media ">
@@ -599,7 +599,7 @@
      <h3><i class="fa fa-group"></i> <strong>Juntas</strong></h3>
    </div><!-- /.panel-header-->
  
-     <div class="withScroll" data-height="125">
+     <div class="withScroll">
       <div class="panel-content">
         <ul class="todo-list ui-sortable">
           <li class="low">
@@ -635,7 +635,7 @@
      <h3><i class="icon-calendar"></i> <strong>Calendario</strong></h3>
    </div><!-- /.panel-header-->
    <div class="panel-content">
-     <div class="withScroll" data-height="125">
+     <div class="withScroll">
         <img src="imagenesADN/calendar.jpg" class="img-responsive">
     </div><!--/.withScroll -->
   </div><!--/.panel-content-->
@@ -654,7 +654,7 @@
       </h3>
    </div><!-- /.panel-header-->
    <div class="panel-content">
-      <div class="withScroll" data-height="125"></div><!--/.withScroll -->
+      <div class="withScroll"></div><!--/.withScroll -->
   </div><!--/.panel-content-->
 </div><!--/.panel .mCustomScrollbar #gadgets-frame -->
 <!-- END FRAME-->
@@ -665,7 +665,7 @@
      <h3><i class="fa fa-bar-chart"></i><strong>Desempeño General de Hoja de Ruta</strong></h3>
    </div><!-- /.panel-header-->
    <div class="panel-content">
-     <div class="withScroll" data-height="125">
+     <div class="withScroll">
       <table class="table table-striped">
         <thead>
           <tr>
@@ -688,7 +688,7 @@
   
           <p class="w-500">Grafica de resultado de Hoja de Ruta</p>
            <img src="imagenesADN/grafica-dp.png" class="img-responsive">
-    
+
 
     </div><!--/.withScroll -->
   </div><!--/.panel-content-->
@@ -724,7 +724,7 @@
 </div> <!-- END MAIN CONTENT -->
 
 <!-- BEGIN BUILDER -->
-<div class="builder " id="builder">
+<div class="builder" id="builder">
       <a class="builder-toggle">
           <i class="icon-wrench"></i>
       </a>
@@ -809,25 +809,22 @@
     <script src="plugins/gsap/main-gsap.min.js"></script>
     <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
     <script src="plugins/jquery-cookies/jquery.cookies.min.js"></script> <!-- Jquery Cookies, for theme -->
-    <script src="plugins/jquery-block-ui/jquery.blockUI.min.js"></script> <!-- simulate synchronous behavior when using AJAX -->
     <script src="plugins/bootbox/bootbox.min.js"></script> <!-- Modal with Validation -->
     <script src="plugins/mcustom-scrollbar/jquery.mCustomScrollbar.concat.min.js"></script> <!-- Custom Scrollbar sidebar -->
     <script src="plugins/bootstrap-dropdown/bootstrap-hover-dropdown.min.js"></script> <!-- Show Dropdown on Mouseover -->
-    <script src="plugins/charts-sparkline/sparkline.min.js"></script> <!-- Charts Sparkline -->
-    <script src="plugins/switchery/switchery.min.js"></script> <!-- IOS Switch -->
-    <script src="plugins/select2/select2.min.js"></script> <!-- Select Inputs -->
     <script src="plugins/icheck/icheck.min.js"></script> <!-- Checkbox & Radio Inputs -->
-    <script src="plugins/backstretch/backstretch.min.js"></script> <!-- Background Image -->
     <script src="plugins/bootstrap-progressbar/bootstrap-progressbar.min.js"></script> <!-- Animated Progress Bar -->
-    <script src="plugins/charts-chartjs/Chart.min.js"></script>
     <script src="js/builder.js"></script> <!-- Theme Builder -->
     <script src="js/sidebar_hover.js"></script> <!-- Sidebar on Hover -->
-    <script src="js/widgets/notes.js"></script> <!-- Notes Widget -->
-    <script src="js/quickview.js"></script> <!-- Chat Script -->
-    <script src="js/pages/search.js"></script> <!-- Search Script -->
-    <script src="js/plugins.js"></script> <!-- Main Plugin Initialization Script -->
     <script src="js/application.js"></script> <!-- Main Application Script -->
-   
+   <script>
+   function toggleBuilder(){
+       $('.builder-toggle').on('click', function(){
+           if($('#builder').hasClass('open')) $('#builder').removeClass('open');
+           else $('#builder').addClass('open');
+       });
+   }
+   </script>
     <script>
     //Function Show and Hide #meses
     $(document).ready(function() {
@@ -855,6 +852,45 @@
     });
   </script>
   <script>
+  //Function withScroll
+  $(document).ready(function(){
+  $('#mCSB_1').click(function(){ 
+  var inputs=$("#mCSB_1").find($("input:checked"));
+  var count=inputs.length; 
+  switch (count)
+  { 
+    case 1:
+    $('#gadgets-mi-equipo .withScroll').attr("style", "height:570px");
+    $('#gadgets-tareas .withScroll').attr("style", "height:570px");
+    $('#gadgets-juntas .withScroll').attr("style", "height:580px");
+    $('#gadgets-calendario .withScroll').attr("style", "height:570px");
+    $('#gadgets-desempeno .withScroll').attr("style", "height:570px");
+    $('#gadgets-frame .withScroll').attr("style", "height:570px");
+    break;
+    case 2:
+    $('#gadgets-mi-equipo .withScroll').attr("style", "height:230px");
+    $('#gadgets-tareas .withScroll').attr("style", "height:230px");
+    $('#gadgets-juntas .withScroll').attr("style", "height:230px");
+    $('#gadgets-calendario .withScroll').attr("style", "height:230px");
+    $('#gadgets-desempeno .withScroll').attr("style", "height:230px");
+    $('#gadgets-frame .withScroll').attr("style", "height:230px");
+    
+    break;
+    case 3: 
+     $('#gadgets-mi-equipo .withScroll').attr("style", "height:125px");
+     $('#gadgets-tareas .withScroll').attr("style", "height:125px");
+     $('#gadgets-juntas .withScroll').attr("style", "height:125px");
+     $('#gadgets-calendario .withScroll').attr("style", "height:125px");
+     $('#gadgets-desempeno .withScroll').attr("style", "height:125px");
+     $('#gadgets-frame .withScroll').attr("style", "height:125px");
+     break;
+  }     
+    
+  });
+  
+});
+  </script>
+  <script>
   //Function Show and Hide #gadgets
   $(document).ready(function(){
     var oculto=$('#gadgets-tareas,#gadgets-juntas,#gadgets-calendario,#gadgets-desempeno,#gadgets-frame');
@@ -867,10 +903,9 @@
                 if(count > 3){
                   alert("La zona de Gadgets solo puede contener 3 elementos");
                   $(this).removeProp('checked');
-                } else 
-                {
-                 $('#gadgets-mi-equipo').show();  
-                }                       
+                }
+                else 
+                {$('#gadgets-mi-equipo').show();}                       
   
             }        
             else        
@@ -887,15 +922,11 @@
                 alert("La zona de Gadgets solo puede contener 3 elementos");
                 $(this).removeProp('checked');
               } else 
-              {
-                $('#gadgets-tareas').show();
-              }            
+              {$('#gadgets-tareas').show();}            
     
             }        
-            else        
-            {            
-                $('#gadgets-tareas').hide();      
-            }    
+            else
+              {$('#gadgets-tareas').hide();}    
         }); 
     //Gadgets Juntas
         $('#g-juntas').click(function(){ 
@@ -906,14 +937,10 @@
                 alert("La zona de Gadgets solo puede contener 3 elementos");
                 $(this).removeProp('checked');
               } else 
-              {
-                $('#gadgets-juntas').show(); 
-              }                  
+              {$('#gadgets-juntas').show();}                  
             }        
             else        
-            {            
-                $('#gadgets-juntas').hide();      
-            }    
+            {$('#gadgets-juntas').hide();}    
         });
     //Gadgets Calendario
         $('#g-cal').click(function(){
@@ -942,14 +969,10 @@
                 alert("La zona de Gadgets solo puede contener 3 elementos");
                 $(this).removeProp('checked');
               } else 
-              {
-                $('#gadgets-frame').show();
-              }
+              {$('#gadgets-frame').show();}
             }        
             else        
-            {            
-                $('#gadgets-frame').hide();      
-            }    
+            {$('#gadgets-frame').hide();}    
         });    
 
     //Gadgets desempeno
@@ -961,14 +984,10 @@
                   alert("La zona de Gadgets solo puede contener 3 elementos");
                   $(this).removeProp('checked');
                 } else 
-                {
-                  $('#gadgets-desempeno').show();
-                }
+                {$('#gadgets-desempeno').show();}
             }        
             else        
-            {            
-                $('#gadgets-desempeno').hide();      
-            }    
+            {$('#gadgets-desempeno').hide();}    
         });       
 
   });
